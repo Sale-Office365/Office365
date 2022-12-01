@@ -47,13 +47,13 @@ Windows 64 Bit
 cd /d %ProgramFiles%\Microsoft Office\Office16
 ```
 
-Sau đó Install giấy phép Office 2019 Prolus Volume License:
+Sau đó Install giấy phép Office 365 Prolus Volume License:
 
 ```php
 for /f %x in ('dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
 ```
 
-Kích hoạt Office 2019 Pro Plus bằng key KMS lần lượt dán câu lệnh:
+Kích hoạt Office 365 Pro Plus bằng key KMS lần lượt dán câu lệnh:
 
 Câu 1:
 
