@@ -26,3 +26,81 @@ Bấm phím O để tạo tác vụ rồi làm theo đề xuất.
 - Tham khảo thêm về office 365 E5 [bấm vào đây](https://github.com/BsNgChiThanh/Tao-office-365-E5-kich-hoat-Office-365-for-desktop), ngày nay cụ Microsoft không cho Việt Nam đăng ký, nếu các bạn muốn hãy nhờ dùng số điện thoại nước ngoài để xác minh.
 - Đăng nhập các tài khoản này vào để khích hoạt.
 - Done!
+
+# GHI CHÚ: #
+
+Bấm vô biểu tượng Windows trên màn hình desktop chọn Windows System rồi chọn Command Prompt chọn More chọn Run As Administrator
+
+![image](https://user-images.githubusercontent.com/103977676/205012427-c8458db5-51cf-4f10-9acc-637140df63b6.png)
+
+Sau đó tùy Win mà dán câu lệnh:
+
+Windows 32 Bit
+
+```php
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+```
+
+Windows 64 Bit
+
+```php
+cd /d %ProgramFiles%\Microsoft Office\Office16
+```
+
+Sau đó Install giấy phép Office 2019 Prolus Volume License:
+
+```php
+for /f %x in ('dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+```
+
+Kích hoạt Office 2019 Pro Plus bằng key KMS lần lượt dán câu lệnh:
+
+Câu 1:
+
+```php
+cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+```
+
+Câu 2:
+
+```php
+cscript ospp.vbs /unpkey:BTDRB >nul
+```
+
+Câu 3:
+
+```php
+cscript ospp.vbs /unpkey:KHGM9 >nul
+```
+
+Câu 4:
+
+```php
+cscript ospp.vbs /unpkey:CPQVG >nul
+```
+
+Câu 5:
+
+```php
+cscript ospp.vbs /unpkey:WFG99 >nul
+```
+
+Câu 6:
+
+```php
+cscript ospp.vbs /sethst:s8.uk.to
+```
+
+Câu 7:
+
+```php
+cscript ospp.vbs /setprt:1688
+```
+
+Câu 8:
+
+```php
+cscript ospp.vbs /act
+```
+
+## Vậy khi thành công thì Office đã kích hoạt 180 ngày! ##
